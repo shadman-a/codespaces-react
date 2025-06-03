@@ -52,3 +52,31 @@
 .Map-wrapper {
   height: 400px;
 }
+
+.AddForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.AddForm input,
+.AddForm button {
+  padding: 0.5rem;
+}
+
+.MapWithList {
+  display: flex;
+}
+
+.SideList {
+  width: 200px;
+  overflow-y: auto;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.Map-area {
+  flex: 1;
+}

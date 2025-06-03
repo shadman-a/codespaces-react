@@ -1,9 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import MapView from './MapView';
+import AddRestaurantForm from './AddRestaurantForm';
+import mapData from './mapData.json';
 
 function App() {
   const [tab, setTab] = useState('home');
+  const [data, setData] = useState(() => {
+    const stored = localStorage.getItem('mapData');
+    return stored ? JSON.parse(stored) : mapData;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('mapData', JSON.stringify(data));
+  }, [data]);
+
+  const handleAdd = (item) => {
+    setData([...data, { ...item, notes: '', visited: false, rating: null, category: '' }]);
+  };
 
   return (
     <div className="App">
@@ -22,33 +36,13 @@ function App() {
         </button>
       </nav>
       {tab === 'home' && (
-        <header className="App-header">
-          <img
-            src={process.env.PUBLIC_URL + '/Octocat.png'}
-            className="App-logo"
-            alt="logo"
-          />
-          <p>
-            GitHub Codespaces <span className="heart">♥️</span> React
-          </p>
-          <p className="small">
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </p>
-        </header>
+        <div className="Form-wrapper">
+          <AddRestaurantForm onAdd={handleAdd} />
+        </div>
       )}
       {tab === 'map' && (
         <div className="Map-wrapper">
-          <MapView />
+          <MapView data={data} />
         </div>
       )}
     </div>
