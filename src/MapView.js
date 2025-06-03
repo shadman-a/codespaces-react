@@ -15,19 +15,30 @@ L.Icon.Default.mergeOptions({
 });
 
 function MapView() {
+  const markers = mapData.filter(
+    (m) => m.latitude !== null && m.longitude !== null
+  );
+
+  const center =
+    markers.length > 0 ? [markers[0].latitude, markers[0].longitude] : [0, 0];
+
   return (
     <MapContainer
-      center={[51.505, -0.09]}
-      zoom={13}
+      center={center}
+      zoom={11}
       style={{ height: '400px', width: '100%' }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      {mapData.map((marker) => (
-        <Marker position={marker.position} key={marker.id}>
-          <Popup>{marker.name}</Popup>
+      {markers.map((marker, idx) => (
+        <Marker position={[marker.latitude, marker.longitude]} key={idx}>
+          <Popup>
+            <strong>{marker.name}</strong>
+            {marker.address && <br />}
+            {marker.address}
+          </Popup>
         </Marker>
       ))}
     </MapContainer>
