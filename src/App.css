@@ -77,6 +77,19 @@
   text-align: left;
 }
 
+.SideList li {
+  cursor: pointer;
+  padding: 0.25rem 0;
+}
+
+.SideList li:hover {
+  background: #f0f0f0;
+}
+
+.arrow {
+  margin-right: 0.25rem;
+}
+
 .Map-area {
   flex: 1;
 }

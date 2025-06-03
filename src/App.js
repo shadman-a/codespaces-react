@@ -42,7 +42,11 @@ function App() {
       )}
       {tab === 'map' && (
         <div className="Map-wrapper">
-          <MapView data={data} />
+          <MapView data={data} onUpdate={(idx, updates) =>
+            setData((d) =>
+              d.map((item, i) => (i === idx ? { ...item, ...updates } : item))
+            )
+          } />
         </div>
       )}
     </div>
