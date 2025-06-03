@@ -29,3 +29,26 @@
 .small {
   font-size: 0.75rem;
 }
+
+.Tabs {
+  display: flex;
+  background: #282c34;
+}
+
+.Tabs button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.Tabs button.active {
+  background: #61dafb;
+  color: #282c34;
+}
+
+.Map-wrapper {
+  height: 400px;
+}
