@@ -8,18 +8,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--header-bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--active-tab-bg);
 }
 
 .heart {
@@ -30,23 +30,29 @@
   font-size: 0.75rem;
 }
 
+
 .Tabs {
   display: flex;
-  background: #282c34;
+  background: var(--header-bg);
 }
 
 .Tabs button {
   flex: 1;
   padding: 0.5rem;
   border: none;
-  background: #444;
-  color: white;
+  background: var(--button-bg);
+  color: var(--button-text);
   cursor: pointer;
 }
 
+.Tabs button.toggle {
+  flex: 0;
+  padding: 0 1rem;
+}
+
 .Tabs button.active {
-  background: #61dafb;
-  color: #282c34;
+  background: var(--active-tab-bg);
+  color: var(--active-tab-color);
 }
 
 .Map-wrapper {
@@ -64,6 +70,16 @@
 .AddForm input,
 .AddForm button {
   padding: 0.5rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--button-bg);
+}
+
+.AddForm button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
 }
 
 .MapWithList {
@@ -83,7 +99,7 @@
 }
 
 .SideList li:hover {
-  background: #f0f0f0;
+  background: var(--hover-bg);
 }
 
 .arrow {
