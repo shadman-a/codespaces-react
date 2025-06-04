@@ -86,7 +86,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
         className="Map-area"
         center={center}
         zoom={11}
-        style={{ height: '400px', width: '100%' }}
+        style={{ height: '100%', width: '100%' }}
         ref={mapRef}
       >
       <TileLayer
