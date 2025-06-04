@@ -6,6 +6,8 @@ import mapData from './mapData.json';
 
 function App() {
   const [tab, setTab] = useState('home');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [darkMode, setDarkMode] = useState(prefersDark);
   const [data, setData] = useState(() => {
     const stored = localStorage.getItem('mapData');
     return stored ? JSON.parse(stored) : mapData;
@@ -14,6 +16,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('mapData', JSON.stringify(data));
   }, [data]);
+
+  useEffect(() => {
+    document.body.dataset.theme = darkMode ? 'dark' : 'light';
+  }, [darkMode]);
 
   const handleAdd = (item) => {
     setData([...data, { ...item, notes: '', visited: false, rating: null, category: '' }]);
@@ -33,6 +39,12 @@ function App() {
           onClick={() => setTab('map')}
         >
           Map
+        </button>
+        <button
+          className="toggle"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? 'Light' : 'Dark'}
         </button>
       </nav>
       {tab === 'home' && (
