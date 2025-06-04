@@ -16,7 +16,7 @@ function HomeScreen({ onAdd }) {
       3000
     );
     return () => clearInterval(id);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="Home">
