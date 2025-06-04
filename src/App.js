@@ -83,7 +83,7 @@ function App() {
           </button>
         </div>
       </nav>
-      {tab === 'home' && <HomeScreen onAdd={handleAdd} />}
+      {tab === 'home' && <HomeScreen onAdd={handleAdd} data={data} />}
       {tab === 'map' && (
         <div className="Map-wrapper">
           <MapView

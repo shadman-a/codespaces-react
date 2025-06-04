@@ -3,18 +3,6 @@
   padding: 1rem;
 }
 
-.Carousel {
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 0.5rem;
-}
-
-.Carousel img {
-  width: 100%;
-  display: block;
-  border-radius: 0.5rem;
-}
 
 .Intro {
   margin: 1rem auto;
@@ -29,4 +17,37 @@
   border: 1px solid var(--hover-bg);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.NearestSection {
+  margin: 1rem auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.NearestList {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.RestaurantCard {
+  flex: 0 0 auto;
+  background: var(--header-bg);
+  border: 1px solid var(--hover-bg);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.RestaurantCard .title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.RestaurantCard .distance {
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
