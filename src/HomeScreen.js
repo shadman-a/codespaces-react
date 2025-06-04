@@ -4,9 +4,11 @@ import './HomeScreen.css';
 
 function HomeScreen({ onAdd }) {
   const images = [
-    'https://source.unsplash.com/800x400/?restaurant',
-    'https://source.unsplash.com/800x400/?food',
-    'https://source.unsplash.com/800x400/?dining',
+    'https://loremflickr.com/800/400/pizza?lock=1',
+    'https://loremflickr.com/800/400/burger?lock=2',
+    'https://loremflickr.com/800/400/sushi?lock=3',
+    'https://loremflickr.com/800/400/dessert?lock=4',
+    'https://loremflickr.com/800/400/pasta?lock=5',
   ];
   const [index, setIndex] = useState(0);
 
@@ -21,7 +23,7 @@ function HomeScreen({ onAdd }) {
   return (
     <div className="Home">
       <div className="Carousel">
-        <img src={images[index]} alt="Restaurant" />
+        <img src={images[index]} alt="Delicious food" />
       </div>
       <div className="Intro">
         <h1>Restaurant Explorer</h1>
