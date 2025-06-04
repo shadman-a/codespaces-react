@@ -152,10 +152,12 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 1rem;
+    max-height: 40vh;
+    overflow-y: auto;
   }
 
   .Map-wrapper {
-    height: 50vh;
-    min-height: 250px;
+    height: 75vh;
+    min-height: 300px;
   }
 }
