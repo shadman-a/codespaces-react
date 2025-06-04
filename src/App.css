@@ -94,6 +94,16 @@
   text-align: left;
 }
 
+.SideList .search-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--hover-bg);
+}
+
 .place-card {
   background: var(--bg-color);
   border: 1px solid var(--hover-bg);
