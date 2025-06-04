@@ -110,18 +110,21 @@
   gap: 0.5rem;
   max-width: 300px;
   margin: 1rem auto;
+  width: 100%;
 }
 
-.AddForm input,
-.AddForm button {
+.AddForm input {
   padding: 0.5rem;
   background: var(--bg-color);
   color: var(--text-color);
   border: 1px solid var(--hover-bg);
   border-radius: 0.25rem;
+  width: 100%;
 }
 
 .AddForm button {
+  padding: 0.5rem;
+  width: 100%;
   background: var(--button-bg);
   color: var(--button-text);
   border: none;

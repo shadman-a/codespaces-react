@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
-import "./App.css";
-import MapView from "./MapView";
-import AddRestaurantForm from "./AddRestaurantForm";
-import LoadingScreen from "./LoadingScreen";
-import mapData from "./mapData.json";
+import { useState, useEffect } from 'react';
+import './App.css';
+import MapView from './MapView';
+import HomeScreen from './HomeScreen';
+import LoadingScreen from './LoadingScreen';
+import mapData from './mapData.json';
+
 
 function App() {
   const [tab, setTab] = useState("home");
@@ -82,12 +83,8 @@ function App() {
           </button>
         </div>
       </nav>
-      {tab === "home" && (
-        <div className="Form-wrapper">
-          <AddRestaurantForm onAdd={handleAdd} />
-        </div>
-      )}
-      {tab === "map" && (
+      {tab === 'home' && <HomeScreen onAdd={handleAdd} />}
+      {tab === 'map' && (
         <div className="Map-wrapper">
           <MapView
             data={data}
