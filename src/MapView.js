@@ -46,13 +46,24 @@ function MapView({ data, onUpdate }) {
   return (
     <div className="MapWithList">
       <div className="SideList">
-        <ul>
-          {data.map((item, idx) => (
-            <li key={idx} onClick={() => handleItemClick(idx)}>
-              <span className="arrow">{"\u279C"}</span> {item.name}
-            </li>
-          ))}
-        </ul>
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className="place-card"
+            onClick={() => handleItemClick(idx)}
+          >
+            <div className="card-info">
+              <div className="title">
+                <span className="check">
+                  {item.visited ? "✅" : "⬜️"}
+                </span>
+                {item.name}
+              </div>
+              {item.address && <div className="address">{item.address}</div>}
+            </div>
+            <span className="arrow">{"\u27A4"}</span>
+          </div>
+        ))}
       </div>
       <MapContainer
         className="Map-area"
