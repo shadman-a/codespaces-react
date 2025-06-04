@@ -218,5 +218,2775 @@
     "visited": false,
     "rating": null,
     "category": ""
+  },
+  {
+    "name": "Remi Flower and Coffee",
+    "address": "231 Elizabeth St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Menkoi Sato",
+    "address": "47 W 13th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Piccola Cucina Osteria Siciliana",
+    "address": "196 Spring St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "A Salt & Battery",
+    "address": "40 W 25th St, New York, NY 10010",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "YGF Malatang",
+    "address": "461 8th Ave, New York, NY 10001",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Midtown West self-serve hot pot",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Beck and Call",
+    "address": "150 W 29th St, New York, NY 10001",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get the Rocket Fuel coffee",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Smashed",
+    "address": "55 W 39th St, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Burger with fries inside",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Laut Singapura",
+    "address": "15 Clinton St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Roti tower",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "S’mac",
+    "address": "345 E 12th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Mac n cheese",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Hop Kee",
+    "address": "21 Mott St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Anthony Bourdain recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lamalo",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Hamburger America",
+    "address": "245 Lafayette St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Good smashed burgers",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sartiano's",
+    "address": "633 Lorimer St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lucky Lucky Cafe",
+    "address": "58 Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "One Fifth",
+    "address": "5 Kenmare St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Parla",
+    "address": "2203 Broadway, New York, NY 10024",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Upper West Side",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Claude",
+    "address": "15 W 55th St, New York, NY 10019",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Manhattan Blackout Cake",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ella Social",
+    "address": "200 W 72nd St, New York, NY 10023",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Upper West Side",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Gnoccheria",
+    "address": "355 W 46th St, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dialogue Coffee & Flowers",
+    "address": "5 Doyers St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Carrot cake latte",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Spongies Cafe",
+    "address": "25 Bayard St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Westville",
+    "address": "246 W 18th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lattanzi",
+    "address": "350 W 47th St, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Lorne Michaels recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Thai Diner",
+    "address": "723 9th Ave, New York, NY 10019",
+    "latitude": null,
+    "longitude": null,
+    "notes": "See TikTok reccos",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Janie’s Cookies",
+    "address": "60 W 43rd St, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Farina",
+    "address": "198 Smith St, Brooklyn, NY 11201",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Brooklyn pizza",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lucali",
+    "address": "575 Henry St, Brooklyn, NY 11231",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Taylor Swift went there—massive wait",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dee Best",
+    "address": "295 Smith St, Brooklyn, NY 11201",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Zeppolis and such",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Le Crocodile",
+    "address": "358 Grand St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sam Suny",
+    "address": "202 E 29th St, New York, NY 10016",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Kips Bay location",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sinigual",
+    "address": "137 Sullivan St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Caphe Den",
+    "address": "49-16 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens—coconut matcha",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Taverna Kyclades",
+    "address": "33-07 Ditmars Blvd, Queens, NY 11105",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Authentic Greek spot in Astoria",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bedford Cheese Shop",
+    "address": "1252 Bedford Ave, Brooklyn, NY 11216",
+    "latitude": null,
+    "longitude": null,
+    "notes": "I want the Hell’s Kitchen Sandwich",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Seven Grams Caffe",
+    "address": "453 W 17th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Choco chip cookie",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tomiño Taberna Gallega",
+    "address": "213 W 14th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "City Cakes",
+    "address": "60 W 22nd St, New York, NY 10010",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Allegedly the best choco chip",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Burrito Box",
+    "address": "283 Avenue B, New York, NY 10009",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Anntremet Cake",
+    "address": "223 W 35th St, New York, NY 10001",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Afternoon tea (holiday version)—no bathroom",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dame",
+    "address": "88 Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Hard to get into—want the fish n chips",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Chick Chick",
+    "address": "2450 Broadway, New York, NY 10024",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Upper West Side",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Culture Espresso",
+    "address": "72 W 38th St, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cookies",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bark BBQ",
+    "address": "429 E 9th St, New York, NY 10009",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Madre",
+    "address": "333 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Spicy Village",
+    "address": "48 Mulberry St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Noodles!!",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ol’Days",
+    "address": "212 E 2nd St, New York, NY 10009",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Coffee",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "A Pasta Bar",
+    "address": "27 W 20th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Hibachi-style pasta",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Felix Roasting Co",
+    "address": "281 6th Ave, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Oxomoco",
+    "address": "128 Greenpoint Ave, Brooklyn, NY 11222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Butterdose",
+    "address": "219 5th Ave, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bus Stop Cafe",
+    "address": "230 Allen St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Taylor Swift reference",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sogno Toscano",
+    "address": "118 MacDougal St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Iced cappuccino",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Electric Burrito",
+    "address": "298 E Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cali burrito",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Alidoro",
+    "address": "531 6th Ave, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Sandwiches",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "DM Restaurant",
+    "address": "110 W 3rd St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Let’s get the 7.5 DM",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Thursday Kitchen",
+    "address": "118 Avenue A, New York, NY 10009",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Mac and cheese",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ai Fiori",
+    "address": "400 5th Ave, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "T-swirl Crepe",
+    "address": "67 Spring St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Crème brûlée crepe",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "York Grill and Juice Bar",
+    "address": "1675 Second Ave, New York, NY 10128",
+    "latitude": null,
+    "longitude": null,
+    "notes": "VERA CRUZ sandwich ⭐️⭐️⭐️⭐️⭐️",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sweet Rehab",
+    "address": "27 Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Delish cookies—near Houston St",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Fedoroff’s Roast Pork",
+    "address": "743 Lorimer St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "MR. SPINA'S ITALIAN HOAGIE and BRONSON FRIES!",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lilia",
+    "address": "567 Union Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Sandwich with broccoli rabe and cheese",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Claudia’s",
+    "address": "728 10th St, Brooklyn, NY 11215",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Guatemalan breakfast",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Butler Bakeshop & Espresso Bar",
+    "address": "95 S 5th St, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Maialino",
+    "address": "2 Lexington Ave, New York, NY 10010",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Want the olive oil cake",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Brooklyn High Low",
+    "address": "685 Washington Ave, Brooklyn, NY 11238",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jacques Torres",
+    "address": "350 9th Ave, Brooklyn, NY 11215",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Best choco chip cookie",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Baby Blues Luncheonette",
+    "address": "343 Flatbush Ave, Brooklyn, NY 11238",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ume",
+    "address": "86 Broadway, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Japanese",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Land to Sea",
+    "address": "269 Grand St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Leo’s",
+    "address": "16 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Williamsburg",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bakeri",
+    "address": "150 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Chino Grande",
+    "address": "233 Grand St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Williamsburg",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lioni Italian Heroes",
+    "address": "7724 13th Ave, Brooklyn, NY 11228",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Doo Wooper",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ciccio’s Pizza",
+    "address": "97 Huron St, Brooklyn, NY 11222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get the sesame one",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Traif",
+    "address": "229 S 4th St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cheap tasting menu",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Kiki’s",
+    "address": "27 Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Flippers",
+    "address": "57 Spring St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Soho—soufflé pancakes",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Coffee Lab",
+    "address": "23rd St & Park Ave S, New York, NY",
+    "latitude": null,
+    "longitude": null,
+    "notes": "First three coffees free (as of 4/7)",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Rowdy’s Rooster",
+    "address": "417 E 12th St, New York, NY 10009",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "La Lanterna di Vittorio",
+    "address": "129 MacDougal St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Lasagna flight",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Almond",
+    "address": "727 Greenwich St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get dinner next time",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Benny’s Burritos",
+    "address": "371 W 46th St, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Pop Up Bagels",
+    "address": "112 W 14th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Greenwich",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Altro Paradiso",
+    "address": "80 E 10th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "(Pam recco)",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Summer Salt",
+    "address": "102 W Houston St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Kolkata Chai",
+    "address": "34-05 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Softside",
+    "address": "323 Broome St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Soho",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bg Cafe",
+    "address": "8 Great Jones Alley, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Stuck With Me Sweets",
+    "address": "82 Mott St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Mott St ice cream",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Barprimi",
+    "address": "243 Elizabeth St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Ricotta truffle honey crostini",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sugar Miss Tea & Cookie",
+    "address": "188 Bedford Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bagel Pub",
+    "address": "619 Fulton St, Brooklyn, NY 11217",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "787 Coffee",
+    "address": "141 W Houston St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Crop Circle",
+    "address": "226 E 9th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Guokui!",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sey Coffee",
+    "address": "44 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Radio Bakery",
+    "address": "72 Nassau Ave, Brooklyn, NY 11222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Greenpoint—tuna sandwich",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Brooklyn Ball Factory",
+    "address": "110 Franklin St, Brooklyn, NY 11222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Patti Ann’s",
+    "address": "112 Henry St, Brooklyn, NY 11201",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Brooklyn Heights—Midwest theme",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ayce-Buffet Hot Pot",
+    "address": "39-19 Prince St, Queens, NY 11354",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Flushing",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "I Like Food",
+    "address": "58 Woodward Ave, Queens, NY 11385",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Ridgewood—spice bag",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "La Cabra",
+    "address": "22-17 Steinway St, Queens, NY 11105",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Gong Gan",
+    "address": "38-20 Broadway, Queens, NY 11354",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Flushing—dessert",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Zeppola Bakery",
+    "address": "853 Broadway, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Nizza",
+    "address": "232 10th Ave, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Burrata toast",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sunday to Sunday",
+    "address": "70 Howard St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Scampi",
+    "address": "128 W 6th St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get the Malfadini",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Poshpop Bakeshop",
+    "address": "196 Bleecker St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "M and M cookie pie cake",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Saravana Bhavan",
+    "address": "81 Lexington Ave, New York, NY 10016",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cheese dosa",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Blue Ribbon Fried Chicken",
+    "address": "470 6th Ave, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Oslo Coffee",
+    "address": "10 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Multiple locations—iced coffee recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cafe Renis",
+    "address": "78-06 Metropolitan Ave, Queens, NY 11379",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Vert Frais",
+    "address": "23-10 30th Ave, Queens, NY 11102",
+    "latitude": null,
+    "longitude": null,
+    "notes": "LIC—soufflé pancakes and ramen",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Champion Pizza",
+    "address": "141-07 Roosevelt Ave, Queens, NY 11354",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Flushing",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Between the Bagel",
+    "address": "34-12 31st Ave, Queens, NY 11106",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Seoul meets bagel—Astoria",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Rosario’s Pizza",
+    "address": "12-01 Ditmars Blvd, Queens, NY 11105",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Astoria",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dani’s House of Pizza",
+    "address": "70-10 Queens Blvd, Queens, NY 11375",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Kew Gardens—get the pesto slice with pepperoni and sweet sauce",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Modoo",
+    "address": "43-14 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Peking BBQ",
+    "address": "39-09 Main St, Queens, NY 11101",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "HQ Chinese Day",
+    "address": "38-03 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Eden Wok",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sergio’s",
+    "address": "183 E Main St, Port Chester, NY 10573",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "R­raci’s",
+    "address": "140 E Boston Post Rd, Mamaroneck, NY 10543",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tutta Bella",
+    "address": "1 Scarsdale Rd, Scarsdale, NY 10583",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jack’s Bar and Restaurant",
+    "address": "504 Main St, Eastchester, NY 10709",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Their curry is good",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "McShane’s Bar & Restaurant",
+    "address": "64 Palisade Ave, Dobbs Ferry, NY 10522",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Good burgers and fish n chips*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Vilda’s",
+    "address": "35 Beale St, Toronto, ON M4M 1K7, Canada",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Melo",
+    "address": "123 Robson St, Vancouver, BC V6B 6R8, Canada",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Everything bagel donut*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Winnie the Pooh Afternoon Tea",
+    "address": "1033 Canada Pl, Vancouver, BC V6C 0B9, Canada",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Westin Bayshore—Canada",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cafe Leon Dore",
+    "address": "7 Leroy St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Suki Curry",
+    "address": "205 E 9th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bar Pitti",
+    "address": "268 W 4th St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Pappardelle alla Fiesolana",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cosimo & Johnny’s Pizzeria",
+    "address": "355 White Plains Rd, Eastchester, NY 10709",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Eastchester",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ciao Restaurant",
+    "address": "60 E Main St, Elmsford, NY 10523",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Chopped salad—ask for fresh mozzarella and grilled chicken*",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jaiya Thai",
+    "address": "12 W 21st St, New York, NY 10010",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jin Ramen",
+    "address": "627 6th Ave, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Prince Street Pizza",
+    "address": "27 Prince St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Artichoke Basille’s Pizza",
+    "address": "328 E 14th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "5 Napkin Burger",
+    "address": "630 9th Ave, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Prince Tea House",
+    "address": "7 Carmine St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Double Chicken Please",
+    "address": "88 Stanton St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Hot honey sandwich—LES",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Fresco by Scotto",
+    "address": "30 Rockefeller Plaza, New York, NY 10112",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "The Compound Coffee Co",
+    "address": "142 Hurd Rd, Franklin Lakes, NJ 07417",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Want the coffee sampler—NJ",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Biggby Coffee",
+    "address": "112 W Central Ave, Moorestown, NJ 08057",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Chocobar Cortes",
+    "address": "191 E 3rd St, Bronx, NY 10453",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Kajiken",
+    "address": "301 E 12th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "See TikTok for noodle reccos",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "MELT Sandwich Shop",
+    "address": "208 Mamaroneck Ave, White Plains, NY 10601",
+    "latitude": null,
+    "longitude": null,
+    "notes": "White Plains",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "886 Taiwanese",
+    "address": "28 St Marks Pl, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Stein’s Market and Deli",
+    "address": "781 Magazine St, New Orleans, LA 70130",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bibimbap Doshirak",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Virtue Restaurant",
+    "address": "146 W Kinzie St, Chicago, IL 60654",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Obama ate fried chicken",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Peaquods",
+    "address": "992 N State St, Chicago, IL 60610",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Deep dish",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Giant",
+    "address": "1410 Elmwood Ave, Buffalo, NY 14222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "BB alum Andy recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Hopleaf",
+    "address": "5148 N Clark St, Chicago, IL 60640",
+    "latitude": null,
+    "longitude": null,
+    "notes": "BB alum Andy recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Monteverde",
+    "address": "1020 W Madison St, Chicago, IL 60607",
+    "latitude": null,
+    "longitude": null,
+    "notes": "BB alum Andy recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Andros Taverna",
+    "address": "1413 W Taylor St, Chicago, IL 60607",
+    "latitude": null,
+    "longitude": null,
+    "notes": "BB alum Andy recco",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cape Cod Creamery",
+    "address": "114 Main St, Hyannis, MA 02601",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Massachusetts",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dinand par Ferdi",
+    "address": "141 Ludlow St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Paris-style—NYC",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Phil’s Pizzeria",
+    "address": "135 W Main St, Syosset, NY 11791",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Francesco Fries—Syosset LI",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Nofodoco",
+    "address": "10 Railroad Ave, Stony Brook, NY 11790",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Blueberry donut—LI",
+    "visited": false,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "12 Chairs Cafe",
+    "address": "926 8th Ave, New York, NY 10019",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Chicken schnitzel salad",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Manny’s Bistro",
+    "address": "1771 Broadway, New York, NY 10019",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Upper West Side *****",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "La Mercerie",
+    "address": "8 Franklin St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Soho—choco chip cookie",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cicci di Carne",
+    "address": "628 Pittsburgh Ave, Queens, NY 11385",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*Kevin recco and Megan had delish",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Arthur and Son",
+    "address": "196 Mott St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bobbi’s Italian Beef",
+    "address": "1903 1st Ave, New York, NY 10128",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Chicago hot dog",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Steve’s Key Lime",
+    "address": "213 Union St, Brooklyn, NY 11231",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Red Hook Brooklyn",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "All’ Antico Vinaio",
+    "address": "226 6th Ave, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Want the Favolosa",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Enly",
+    "address": "23 Pacific St, Brooklyn, NY 11201",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Tiramisu latte",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Le Relais de Venise L'Entrecôte",
+    "address": "20 W 40th St, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "MáLà Project",
+    "address": "180 Ludlow St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "L’entrecôte",
+    "address": "20 W 40th St, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Steak fries",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Little Spain",
+    "address": "10 Hudson Yards, New York, NY 10001",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Olive oil soft serve",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Au Zataar",
+    "address": "11 Warren St, New York, NY 10007",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Javelina",
+    "address": "218 W 14th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Maison Pickle",
+    "address": "80 W 3rd St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cheese fries and bread with honey butter",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sunday in Brooklyn",
+    "address": "348 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get pancakes with maple praline",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Fini Pizza (Williamsburg)",
+    "address": "126 Bedford Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Williamsburg—white slice",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "El Born",
+    "address": "42 Golconda Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Greenpoint BK—tapas",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Barney Greengrass",
+    "address": "541 Amsterdam Ave, New York, NY 10024",
+    "latitude": null,
+    "longitude": null,
+    "notes": "UWS—latkes",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Fini Pizza (NYC)",
+    "address": "28 Benedict St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "White lemon slice",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Rolo’s",
+    "address": "23-20 Steinway St, Queens, NY 11105",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens—Jeremey Allen white recco—burger and lasagna",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tazza",
+    "address": "80 East Market St, Akron, OH 44308",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Chunky Boss Chicken",
+    "address": "214 E 10th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Laura’s Bagel",
+    "address": "546 Main St, New Rochelle, NY 10801",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Long bagel (used to be Sammy’s) Sammy’s stick",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Yellow Rose",
+    "address": "151 Bleecker St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Good Tex-Mex and sheet cakes",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Aroma Espresso Bar",
+    "address": "800 Burrard St, Vancouver, BC V6Z 1Y6, Canada",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Burgerology",
+    "address": "1750 Oak St, Buffalo, NY 14207",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Buffalo Mac and cheese—Farmingdale LI",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mona Lisa Deli",
+    "address": "35 Spencer Pl, Scarsdale, NY 10583",
+    "latitude": null,
+    "longitude": null,
+    "notes": "**",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Coffee Project",
+    "address": "239 E 5th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cherry blossom latte",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Sonnyboy",
+    "address": "98 1st Ave, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Burrata + fig toast",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Edith",
+    "address": "101 Bedford Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Williamsburg—bagel",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "La Rina Pastificio e Vino",
+    "address": "84 S 6th St, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Kured",
+    "address": "602 12th St, Brooklyn, NY 11215",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Win Son",
+    "address": "30 30th St, Brooklyn, NY 11232",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Brooklyn—cuz Cody got",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Walters",
+    "address": "5 Halstead Ave, Mamaroneck, NY 10543",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Hot dogs",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Parm",
+    "address": "248 Mulberry St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Emmy’s Squared",
+    "address": "23 Orchard St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get MVP",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Oh! Taisho",
+    "address": "12 Christopher St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Utopia Bagels",
+    "address": "35-12 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "I need Prosciutto Bagel with Bacon Cream Cheese and Bacon",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tuck’d Away",
+    "address": "24 Columbus Ave, Tuckahoe, NY 10707",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Their nachos are meant to be good",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "The Hungarian Pastry Shop",
+    "address": "1030 Amsterdam Ave, New York, NY 10025",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Wah Fung No 1",
+    "address": "83 Mott St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Chow fun—Chinatown NYC",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "O’Bagel",
+    "address": "150 Haddon Ave, Westmont, NJ 08108",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Bacon, egg & cheese with hash-brown and scallion cream cheese on an everything bagel",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bibble & Sip",
+    "address": "291 Elizabeth St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Au Cheval",
+    "address": "800 W Randolph St, Chicago, IL 60607",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Want the egg burger",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Deviant Donuts",
+    "address": "32 Water St, Mystic, CT 06355",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Compton’s",
+    "address": "34-19 28th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Astoria",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Haidilao",
+    "address": "37-10 30th Ave, Queens, NY 11103",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens—hotpot",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Budlong",
+    "address": "2712 N Clark St, Chicago, IL 60614",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Chicago—bussin",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Punjabi Deli",
+    "address": "63 Essex St, New York, NY 10002",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get the chai",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Maria Restaurant",
+    "address": "190 N Ave, New Rochelle, NY 10801",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Pops Espresso Bar",
+    "address": "1150 E Boston Post Rd, Mamaroneck, NY 10543",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Anita Gelato",
+    "address": "52 Gansevoort St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Milano Market",
+    "address": "1601 3rd Ave, New York, NY 10128",
+    "latitude": null,
+    "longitude": null,
+    "notes": "UES—best chicken Caesar wrap",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Enzo Bruni",
+    "address": "48 E 4th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Italian panuozzo—when we lose 5 lbs each",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Dudley’s",
+    "address": "85 2nd Ave, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Fried chicken sandwich",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Maman Soho",
+    "address": "239 Centre St, New York, NY 10013",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Lenny’s Bagels",
+    "address": "137 Main St, New Rochelle, NY 10801",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Create your own egg sandwich (2 scrambled eggs, steak, pepper jack cheese, hash brown on everything bagel)",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Krispy Pizza",
+    "address": "231 Manhattan Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Brooklyn—trio pizza",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Fortunato Brothers",
+    "address": "238 S 5th St, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Pistachio cannoli—Williamsburg",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jack’s Wife Freda",
+    "address": "224 Lafayette St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mission Sandwich",
+    "address": "61 Wythe Ave, Brooklyn, NY 11249",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get prosciutto di Parma, cantaloupe, hot honey, arugula, preserved lemon aioli sandwich; kalbi-inspired short rib, French fries, kimchi, lettuce",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "L&BS Pizza",
+    "address": "1269 Fulton St, Brooklyn, NY 11216",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Brooklyn—get Sicilian whole pie and a pint of spumoni",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mom’s Kitchen and Bar",
+    "address": "82-80 162nd St, Queens, NY 11432",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Queens—avo toast v good",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ole & Steen",
+    "address": "2 E 4th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Never go again—I hate",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "10000 Coffee",
+    "address": "89 W 3rd St, New York, NY 10012",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Galloways Pies",
+    "address": "8 Chase Rd, Scarsdale, NY 10583",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Get the rainbow cookies (for Agnes)",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tako",
+    "address": "5 W 19th St, New York, NY 10011",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Our fave Mexican bowls",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Rule of Thirds",
+    "address": "34 Greenpoint Ave, Brooklyn, NY 11222",
+    "latitude": null,
+    "longitude": null,
+    "notes": "I need the soufflé pancake—Greenpoint, Brooklyn—long wait",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Almond (again)",
+    "address": "727 Greenwich St, New York, NY 10014",
+    "latitude": null,
+    "longitude": null,
+    "notes": "(Pam recco)—Teos tamales v good—good brunch",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Brooklyn Hots",
+    "address": "223 Bedford Ave, Brooklyn, NY 11211",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Garbage plate—home fries were burnt; Megan liked more than Shadman",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mike’s Deli",
+    "address": "2411 Arthur Ave, Bronx, NY 10458",
+    "latitude": null,
+    "longitude": null,
+    "notes": "(Eggplant parm good)**—Arthur Avenue",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Beecher’s Handmade Cheese",
+    "address": "900 Broadway, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "I want the mac n cheese",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cookie Munchers",
+    "address": "319 US-202, Hillsdale, NJ 07642",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Best thing in the world",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Compass Coffee",
+    "address": "1539 7th St NW, Washington, DC 20001",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Cherry blossom cream cold brew with half n half—Washington DC",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "DonerBros",
+    "address": "2453 Rt 44, Suite 1, Ellicott City, MD 21043",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Maryland—amazing",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Philz Coffee",
+    "address": "550 Castro St, Mountain View, CA 94041",
+    "latitude": null,
+    "longitude": null,
+    "notes": "LOML",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "GCDC",
+    "address": "181 Ellicott St, Buffalo, NY 14203",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Buffalo Mac and cheese",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Taimoca",
+    "address": "10 N Water St, Nyack, NY 10960",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bel Fries",
+    "address": "81 1st Ave, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Take 31",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "NY—12/26/21",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mike’s Pastry",
+    "address": "300 Hanover St, Boston, MA 02113",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Best cannolis",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Jewish Day (Epstein’s)",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "1/1",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Peruvian Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "1/9—Lomo a lo pobre",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Indian/Bengali Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "1/16",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Thai Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "1/30",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Korean Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "2/6",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Greek Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "2/14",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Rio Bravo",
+    "address": "460 Mamaroneck Ave, Mamaroneck, NY 10543",
+    "latitude": null,
+    "longitude": null,
+    "notes": "We love the enchilada—Sonoma",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "The Black Cow Coffee Company",
+    "address": "18 W Central Ave, Pleasantville, NY 10570",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Glazed Over Donuts",
+    "address": "1 Main St, Beacon, NY 12508",
+    "latitude": null,
+    "longitude": null,
+    "notes": "⭐️⭐️⭐️⭐️⭐️",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ralph’s Coffee",
+    "address": "160 W 62nd St, New York, NY 10023",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Frenemies Pizza",
+    "address": "2726 86th St, Brooklyn, NY 11223",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Domino’s—pineapple/jalapeños/black olives—6/11—Shadman loved despite dissing it",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Bluestone Lane Westchester Coffee Shop",
+    "address": "380 Westchester Ave, Port Chester, NY 10573",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Cheese Day",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "7/24",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Meat the Greek Restaurant",
+    "address": "4217 3rd Ave, Bronx, NY 10457",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Turkish",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Carlo’s",
+    "address": "43 N Broadway, Yonkers, NY 10701",
+    "latitude": null,
+    "longitude": null,
+    "notes": "⭐️⭐️⭐️⭐️⭐️—Yonkers",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mason Sandwich Co",
+    "address": "46 Concord St, South Salem, NY 10590",
+    "latitude": null,
+    "longitude": null,
+    "notes": "*—BLT salad??",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Korean Fried Cheese",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Stephen’s Green",
+    "address": "187 S Central Ave, Hartsdale, NY 10530",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Their curry is good*—8/28",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "A Lovely Wee Tearoom",
+    "address": "270 Mamaroneck Ave, Mamaroneck, NY 10543",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Alice tear room chapter 2",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Beach Donuts",
+    "address": "1 N Beacon St, Beacon, NY 12508",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Clinton, CT",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Land of Thai",
+    "address": "45 Main St, Clinton, CT 06413",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Clinton, CT",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Hapag",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "7/3",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Korean Corndogs",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Mister Dips",
+    "address": "336 Smith St, Brooklyn, NY 11231",
+    "latitude": null,
+    "longitude": null,
+    "notes": "NY—7/24",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Blank Street",
+    "address": "236 E 13th St, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "NY—7/24",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Wooden Fire",
+    "address": "49 W Broadway, White Plains, NY 10601",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Agnes O’Brien: 'You got to try polenta fries with honey'",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Little B’s Burger Bar",
+    "address": "568 9th Ave, New York, NY 10018",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Joey recco",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Caffe Ammi",
+    "address": "22 St Marks Pl, New York, NY 10003",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Via Forno",
+    "address": "77 Adams St, Brooklyn, NY 11201",
+    "latitude": null,
+    "longitude": null,
+    "notes": "",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Brazilian Steak House",
+    "address": "636 10th Ave, New York, NY 10036",
+    "latitude": null,
+    "longitude": null,
+    "notes": "6/5",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Tim Hortons",
+    "address": "6500 Peachtree Dunwoody Rd NE, Atlanta, GA 30328",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Iced capp ⭐️⭐️⭐️⭐️⭐️",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Eataly",
+    "address": "200 5th Ave, New York, NY 10010",
+    "latitude": null,
+    "longitude": null,
+    "notes": "10/10",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "El Barrio",
+    "address": "45 Harvard Rd, Scarsdale, NY 10583",
+    "latitude": null,
+    "longitude": null,
+    "notes": "**—Burger good (fig jam, etc.) 10/10",
+    "visited": true,
+    "rating": null,
+    "category": ""
+  },
+  {
+    "name": "Ziatun",
+    "address": "12 S Chestnut St, Beacon, NY 12508",
+    "latitude": null,
+    "longitude": null,
+    "notes": "Beacon NY",
+    "visited": true,
+    "rating": null,
+    "category": ""
   }
 ]
