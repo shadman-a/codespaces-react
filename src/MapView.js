@@ -20,12 +20,23 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const mapRef = useRef();
   const markerRefs = useRef({});
   const [modalIndex, setModalIndex] = useState(null);
+  const [search, setSearch] = useState('');
 
   const markers = data
     .map((m, idx) =>
       m.latitude !== null && m.longitude !== null ? { ...m, idx } : null
     )
     .filter(Boolean);
+
+  const filteredItems = data
+    .map((item, idx) => ({ item, idx }))
+    .filter(({ item }) => {
+      const term = search.toLowerCase();
+      return (
+        item.name.toLowerCase().includes(term) ||
+        (item.address && item.address.toLowerCase().includes(term))
+      );
+    });
 
   const center =
     markers.length > 0 ? [markers[0].latitude, markers[0].longitude] : [0, 0];
@@ -46,7 +57,13 @@ function MapView({ data, onUpdate, darkMode = false }) {
   return (
     <div className="MapWithList">
       <div className="SideList">
-        {data.map((item, idx) => (
+        <input
+          className="search-input"
+          placeholder="Search..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        {filteredItems.map(({ item, idx }) => (
           <div
             key={idx}
             className="place-card"
