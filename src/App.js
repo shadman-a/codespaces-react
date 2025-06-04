@@ -2,16 +2,24 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import MapView from './MapView';
 import AddRestaurantForm from './AddRestaurantForm';
+import LoadingScreen from './LoadingScreen';
 import mapData from './mapData.json';
 
 function App() {
   const [tab, setTab] = useState('home');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [loading, setLoading] = useState(true);
+  const prefersDark =
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [darkMode, setDarkMode] = useState(prefersDark);
   const [data, setData] = useState(() => {
     const stored = localStorage.getItem('mapData');
     return stored ? JSON.parse(stored) : mapData;
   });
+
+  useEffect(() => {
+    const id = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(id);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('mapData', JSON.stringify(data));
@@ -27,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      {loading && <LoadingScreen />}
       <nav className="Tabs">
         <button
           className={tab === 'home' ? 'active' : ''}
