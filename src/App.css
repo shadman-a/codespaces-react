@@ -84,6 +84,7 @@
 
 .MapWithList {
   display: flex;
+  height: 100%;
 }
 
 .SideList {
@@ -127,6 +128,7 @@
 
 .Map-area {
   flex: 1;
+  height: 100%;
 }
 
 @media (max-width: 600px) {
