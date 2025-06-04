@@ -39,6 +39,8 @@ function MapView({ data, onUpdate }) {
         ref.openPopup();
       }
     }
+    // Open the detail modal just like clicking on the marker
+    setModalIndex(idx);
   };
 
   return (
@@ -47,7 +49,7 @@ function MapView({ data, onUpdate }) {
         <ul>
           {data.map((item, idx) => (
             <li key={idx} onClick={() => handleItemClick(idx)}>
-              <span className="arrow">\u279C</span> {item.name}
+              <span className="arrow">{"\u279C"}</span> {item.name}
             </li>
           ))}
         </ul>
@@ -56,7 +58,7 @@ function MapView({ data, onUpdate }) {
         className="Map-area"
         center={center}
         zoom={11}
-        style={{ height: '400px', width: '100%' }}
+        style={{ height: '100%', width: '100%' }}
       >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
