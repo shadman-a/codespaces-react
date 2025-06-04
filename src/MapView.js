@@ -1,8 +1,9 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import DetailModal from './DetailModal';
+import { geocodeAddress } from './geocode';
 // Map data is provided by parent via props
 
 // Fix leaflet's default icon paths
@@ -21,6 +22,33 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const markerRefs = useRef({});
   const [modalIndex, setModalIndex] = useState(null);
   const [search, setSearch] = useState('');
+
+  useEffect(() => {
+    async function fillMissing() {
+      for (const [idx, item] of data.entries()) {
+        if (
+          item.latitude === null &&
+          item.longitude === null &&
+          item.address
+        ) {
+          try {
+            const coords = await geocodeAddress(item.address);
+            if (coords) {
+              onUpdate &&
+                onUpdate(idx, {
+                  latitude: coords.lat,
+                  longitude: coords.lon,
+                });
+            }
+          } catch (err) {
+            console.error('Geocoding failed', err);
+          }
+        }
+      }
+    }
+    fillMissing();
+    // We only want to run when data changes
+  }, [data, onUpdate]);
 
   const markers = data
     .map((m, idx) =>

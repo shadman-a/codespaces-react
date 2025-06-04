@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { geocodeAddress } from './geocode';
 
 function AddRestaurantForm({ onAdd }) {
   const [name, setName] = useState('');
@@ -6,13 +7,26 @@ function AddRestaurantForm({ onAdd }) {
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    let lat = latitude ? parseFloat(latitude) : null;
+    let lon = longitude ? parseFloat(longitude) : null;
+    if (lat === null && lon === null && address) {
+      try {
+        const result = await geocodeAddress(address);
+        if (result) {
+          lat = result.lat;
+          lon = result.lon;
+        }
+      } catch (err) {
+        console.error('Geocoding failed', err);
+      }
+    }
     onAdd({
       name,
       address: address || null,
-      latitude: latitude ? parseFloat(latitude) : null,
-      longitude: longitude ? parseFloat(longitude) : null,
+      latitude: lat,
+      longitude: lon,
     });
     setName('');
     setAddress('');
