@@ -1,0 +1,32 @@
+.Home {
+  text-align: center;
+  padding: 1rem;
+}
+
+.Carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.Carousel img {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.Intro {
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.FormCard {
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: var(--header-bg);
+  border: 1px solid var(--hover-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

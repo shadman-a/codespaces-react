@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import MapView from './MapView';
-import AddRestaurantForm from './AddRestaurantForm';
+import HomeScreen from './HomeScreen';
 import LoadingScreen from './LoadingScreen';
 import mapData from './mapData.json';
 
@@ -56,11 +56,7 @@ function App() {
           {darkMode ? 'Light' : 'Dark'}
         </button>
       </nav>
-      {tab === 'home' && (
-        <div className="Form-wrapper">
-          <AddRestaurantForm onAdd={handleAdd} />
-        </div>
-      )}
+      {tab === 'home' && <HomeScreen onAdd={handleAdd} />}
       {tab === 'map' && (
         <div className="Map-wrapper">
           <MapView
