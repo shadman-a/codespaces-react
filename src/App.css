@@ -30,13 +30,45 @@
   font-size: 0.75rem;
 }
 
-
 .Tabs {
   display: flex;
   background: var(--header-bg);
   border-bottom: 1px solid var(--hover-bg);
   height: var(--nav-height);
   align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0 0.75rem;
+  cursor: pointer;
+  color: var(--text-color);
+  height: 100%;
+}
+
+.Menu {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.Menu button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.Menu .icon {
+  font-size: 1.2rem;
 }
 
 .Tabs button {
@@ -49,6 +81,11 @@
   border-radius: 0.25rem 0.25rem 0 0;
   transition: background 0.2s;
   height: 100%;
+}
+
+.Tabs .hamburger {
+  background: none;
+  color: var(--text-color);
 }
 
 .Tabs button.toggle {
@@ -178,6 +215,10 @@
     border-bottom: none;
   }
 
+  .Menu {
+    justify-content: space-around;
+  }
+
   .MapWithList {
     flex-direction: column;
   }
@@ -193,5 +234,29 @@
   .Map-wrapper {
     height: calc(100vh - var(--nav-height));
     min-height: 300px;
+  }
+}
+
+@media (min-width: 601px) {
+  .hamburger {
+    display: block;
+  }
+
+  .Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    flex-direction: column;
+    background: var(--header-bg);
+    padding-top: var(--nav-height);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .Menu.open {
+    transform: translateX(0);
   }
 }
