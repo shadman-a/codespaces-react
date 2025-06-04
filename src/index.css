@@ -12,20 +12,21 @@
   --modal-bg: #ffffff;
   --modal-overlay-bg: rgba(0, 0, 0, 0.5);
   --accent-color: #4f46e5;
+  --nav-height: 3rem;
 }
 
 [data-theme='dark'] {
-  --bg-color: #0f172a;
+  --bg-color: #000000;
   --text-color: #f8fafc;
-  --header-bg: #1e293b;
-  --button-bg: #4f46e5;
+  --header-bg: #000000;
+  --button-bg: #000000;
   --button-text: #ffffff;
-  --active-tab-bg: #4f46e5;
+  --active-tab-bg: #000000;
   --active-tab-color: #ffffff;
-  --hover-bg: #334155;
-  --modal-bg: #1e293b;
+  --hover-bg: #1a1a1a;
+  --modal-bg: #000000;
   --modal-overlay-bg: rgba(0, 0, 0, 0.8);
-  --accent-color: #818cf8;
+  --accent-color: #ffffff;
 }
 
 body {
