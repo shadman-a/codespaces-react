@@ -16,7 +16,7 @@ L.Icon.Default.mergeOptions({
     'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-function MapView({ data, onUpdate }) {
+function MapView({ data, onUpdate, darkMode = false }) {
   const mapRef = useRef();
   const markerRefs = useRef({});
   const [modalIndex, setModalIndex] = useState(null);
@@ -72,7 +72,11 @@ function MapView({ data, onUpdate }) {
         style={{ height: '100%', width: '100%' }}
       >
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url={
+          darkMode
+            ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+            : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        }
         attribution="&copy; OpenStreetMap contributors"
       />
       {markers.map((marker) => (
