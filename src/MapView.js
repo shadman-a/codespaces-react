@@ -1,36 +1,41 @@
-import { useRef, useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
-import DetailModal from './DetailModal';
-import { geocodeAddress } from './geocode';
+import { useRef, useState, useEffect } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import DetailModal from "./DetailModal";
+import { geocodeAddress } from "./geocode";
 // Map data is provided by parent via props
 
 // Fix leaflet's default icon paths
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
-    'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  iconUrl:
-    'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  shadowUrl:
-    'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
 function MapView({ data, onUpdate, darkMode = false }) {
   const mapRef = useRef();
   const markerRefs = useRef({});
   const [modalIndex, setModalIndex] = useState(null);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
+  const [activeCat, setActiveCat] = useState(null);
+
+  const categories = [
+    "🍕 Pizza",
+    "🍣 Sushi",
+    "🍔 Burgers",
+    "🥗 Salads",
+    "🌮 Tacos",
+    "🍜 Ramen",
+    "🥩 Steak",
+  ];
 
   useEffect(() => {
     async function fillMissing() {
       for (const [idx, item] of data.entries()) {
-        if (
-          item.latitude === null &&
-          item.longitude === null &&
-          item.address
-        ) {
+        if (item.latitude === null && item.longitude === null && item.address) {
           try {
             const coords = await geocodeAddress(item.address);
             if (coords) {
@@ -41,7 +46,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
                 });
             }
           } catch (err) {
-            console.error('Geocoding failed', err);
+            console.error("Geocoding failed", err);
           }
         }
       }
@@ -52,7 +57,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
 
   const markers = data
     .map((m, idx) =>
-      m.latitude !== null && m.longitude !== null ? { ...m, idx } : null
+      m.latitude !== null && m.longitude !== null ? { ...m, idx } : null,
     )
     .filter(Boolean);
 
@@ -60,10 +65,12 @@ function MapView({ data, onUpdate, darkMode = false }) {
     .map((item, idx) => ({ item, idx }))
     .filter(({ item }) => {
       const term = search.toLowerCase();
-      return (
+      const matchesTerm =
         item.name.toLowerCase().includes(term) ||
-        (item.address && item.address.toLowerCase().includes(term))
-      );
+        (item.address && item.address.toLowerCase().includes(term));
+      const catLabel = activeCat ? activeCat.replace(/^[^ ]+\s*/, "") : "";
+      const matchesCat = !activeCat || item.category === catLabel;
+      return matchesTerm && matchesCat;
     });
 
   const center =
@@ -85,12 +92,34 @@ function MapView({ data, onUpdate, darkMode = false }) {
   return (
     <div className="MapWithList">
       <div className="SideList">
-        <input
-          className="search-input"
-          placeholder="Search..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <div className="SearchBar">
+          <input
+            className="search-input"
+            placeholder="Search for food…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button className="filter-btn" aria-label="Filters">
+            <span role="img" aria-label="Filter">
+              ⚙️
+            </span>
+          </button>
+        </div>
+        <div className="CategoryRow">
+          {categories.map((c) => (
+            <button
+              key={c}
+              className={c === activeCat ? "active" : ""}
+              onClick={() => {
+                setActiveCat(c);
+                const term = c.replace(/^[^ ]+\s*/, "");
+                setSearch(term);
+              }}
+            >
+              {c}
+            </button>
+          ))}
+        </div>
         {filteredItems.map(({ item, idx }) => (
           <div
             key={idx}
@@ -99,9 +128,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
           >
             <div className="card-info">
               <div className="title">
-                <span className="check">
-                  {item.visited ? "✅" : "⬜️"}
-                </span>
+                <span className="check">{item.visited ? "✅" : "⬜️"}</span>
                 {item.name}
               </div>
               {item.address && <div className="address">{item.address}</div>}
@@ -114,35 +141,35 @@ function MapView({ data, onUpdate, darkMode = false }) {
         className="Map-area"
         center={center}
         zoom={11}
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: "100%", width: "100%" }}
         ref={mapRef}
       >
-      <TileLayer
-        url={
-          darkMode
-            ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-            : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-        }
-        attribution="&copy; OpenStreetMap contributors"
-      />
-      {markers.map((marker) => (
-        <Marker
-          position={[marker.latitude, marker.longitude]}
-          key={marker.idx}
-          ref={(ref) => {
-            if (ref) markerRefs.current[marker.idx] = ref;
-          }}
-          eventHandlers={{
-            click: () => setModalIndex(marker.idx),
-          }}
-        >
-          <Popup>
-            <strong>{marker.name}</strong>
-            {marker.address && <br />}
-            {marker.address}
-          </Popup>
-        </Marker>
-      ))}
+        <TileLayer
+          url={
+            darkMode
+              ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+              : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          }
+          attribution="&copy; OpenStreetMap contributors"
+        />
+        {markers.map((marker) => (
+          <Marker
+            position={[marker.latitude, marker.longitude]}
+            key={marker.idx}
+            ref={(ref) => {
+              if (ref) markerRefs.current[marker.idx] = ref;
+            }}
+            eventHandlers={{
+              click: () => setModalIndex(marker.idx),
+            }}
+          >
+            <Popup>
+              <strong>{marker.name}</strong>
+              {marker.address && <br />}
+              {marker.address}
+            </Popup>
+          </Marker>
+        ))}
       </MapContainer>
       {modalIndex !== null && (
         <DetailModal
