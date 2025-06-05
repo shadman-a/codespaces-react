@@ -203,12 +203,12 @@
 
 @media (max-width: 600px) {
   body {
-    padding-bottom: var(--nav-height);
+    padding-bottom: calc(var(--nav-height) + var(--bottom-offset));
   }
 
   .Tabs {
     position: fixed;
-    bottom: 0;
+    bottom: var(--bottom-offset);
     left: 0;
     right: 0;
     border-top: 1px solid var(--hover-bg);
