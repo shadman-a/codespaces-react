@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -22,15 +22,13 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
 
-  const categories = [
-    "🍕 Pizza",
-    "🍣 Sushi",
-    "🍔 Burgers",
-    "🥗 Salads",
-    "🌮 Tacos",
-    "🍜 Ramen",
-    "🥩 Steak",
-  ];
+  const categories = useMemo(() => {
+    const cats = new Set();
+    for (const item of data) {
+      if (item.category) cats.add(item.category);
+    }
+    return Array.from(cats).sort();
+  }, [data]);
 
   useEffect(() => {
     async function fillMissing() {
@@ -68,8 +66,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
       const matchesTerm =
         item.name.toLowerCase().includes(term) ||
         (item.address && item.address.toLowerCase().includes(term));
-      const catLabel = activeCat ? activeCat.replace(/^[^ ]+\s*/, "") : "";
-      const matchesCat = !activeCat || item.category === catLabel;
+      const matchesCat = !activeCat || item.category === activeCat;
       return matchesTerm && matchesCat;
     });
 
@@ -110,13 +107,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
             <button
               key={c}
               className={c === activeCat ? "active" : ""}
-              onClick={() => {
-                setActiveCat(c);
-                const term = c.replace(/^[^ ]+\s*/, "");
-                setSearch(term);
-              }}
+              onClick={() => setActiveCat(c === activeCat ? null : c)}
             >
-              {c}
+              {c.charAt(0).toUpperCase() + c.slice(1)}
             </button>
           ))}
         </div>
