@@ -213,21 +213,6 @@
   border-radius: 0.25rem;
 }
 
-.Filters .VisitedRow {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.25rem 0 0.5rem;
-}
-
-.Filters .VisitedRow select {
-  flex: 1;
-  padding: 0.25rem;
-  background: var(--bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--hover-bg);
-  border-radius: 0.25rem;
-}
 
 .CategoryRow {
   display: flex;

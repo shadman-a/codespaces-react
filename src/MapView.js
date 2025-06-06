@@ -23,8 +23,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
-  const [sort, setSort] = useState("default");
-  const [visitedFilter, setVisitedFilter] = useState("all");
+  const [sort, setSort] = useState("recent");
   const [location, setLocation] = useState(null);
 
   const categoryEmojis = {
@@ -120,9 +119,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
         (item.address && item.address.toLowerCase().includes(term));
       const matchesCat = !activeCat || item.category === activeCat;
       const matchesVisited =
-        visitedFilter === "all" ||
-        (visitedFilter === "visited" && item.visited) ||
-        (visitedFilter === "unvisited" && !item.visited);
+        (sort !== "visited" && sort !== "unvisited") ||
+        (sort === "visited" && item.visited) ||
+        (sort === "unvisited" && !item.visited);
       return matchesTerm && matchesCat && matchesVisited;
     })
     .map(({ item, idx }) => {
@@ -150,6 +149,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
         if (a.distance === null) return 1;
         if (b.distance === null) return -1;
         return a.distance - b.distance;
+      }
+      if (sort === "recent") {
+        return b.idx - a.idx;
       }
       return 0;
     });
@@ -217,19 +219,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
               value={sort}
               onChange={(e) => setSort(e.target.value)}
             >
-              <option value="default">None</option>
+              <option value="recent">Most Recently Added</option>
               <option value="alphabetical">Alphabetical</option>
               <option value="distance">Distance</option>
-            </select>
-          </div>
-          <div className="VisitedRow">
-            <label htmlFor="visited-select">Visited:</label>
-            <select
-              id="visited-select"
-              value={visitedFilter}
-              onChange={(e) => setVisitedFilter(e.target.value)}
-            >
-              <option value="all">All</option>
               <option value="visited">Visited</option>
               <option value="unvisited">Not Visited</option>
             </select>
