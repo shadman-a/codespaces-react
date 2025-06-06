@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { MdHome, MdExplore, MdMap, MdPerson, MdDarkMode, MdLightMode, MdMenu } from 'react-icons/md';
 import './App.css';
 import MapView from './MapView';
 import HomeScreen from './HomeScreen';
+import ExploreScreen from './ExploreScreen';
+import ProfileScreen from './ProfileScreen';
 import LoadingScreen from './LoadingScreen';
 import mapData from './mapData.json';
 
@@ -48,7 +51,7 @@ function App() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
-          ☰
+          <MdMenu />
         </button>
         <div className={`Menu${menuOpen ? " open" : ""}`}>
           <button
@@ -58,10 +61,22 @@ function App() {
               setMenuOpen(false);
             }}
           >
-            <span className="icon" role="img" aria-label="Home">
-              🏠
+            <span className="icon" aria-label="Home">
+              <MdHome />
             </span>
             <span className="label">Home</span>
+          </button>
+          <button
+            className={tab === "explore" ? "active" : ""}
+            onClick={() => {
+              setTab("explore");
+              setMenuOpen(false);
+            }}
+          >
+            <span className="icon" aria-label="Explore">
+              <MdExplore />
+            </span>
+            <span className="label">Explore</span>
           </button>
           <button
             className={tab === "map" ? "active" : ""}
@@ -70,20 +85,33 @@ function App() {
               setMenuOpen(false);
             }}
           >
-            <span className="icon" role="img" aria-label="Map">
-              🗺️
+            <span className="icon" aria-label="Map">
+              <MdMap />
             </span>
             <span className="label">Map</span>
           </button>
+          <button
+            className={tab === "profile" ? "active" : ""}
+            onClick={() => {
+              setTab("profile");
+              setMenuOpen(false);
+            }}
+          >
+            <span className="icon" aria-label="Profile">
+              <MdPerson />
+            </span>
+            <span className="label">Profile</span>
+          </button>
           <button className="toggle" onClick={() => setDarkMode(!darkMode)}>
-            <span className="icon" role="img" aria-label="Theme">
-              {darkMode ? "☀️" : "🌙"}
+            <span className="icon" aria-label="Theme">
+              {darkMode ? <MdLightMode /> : <MdDarkMode />}
             </span>
             <span className="label">{darkMode ? "Light" : "Dark"}</span>
           </button>
         </div>
       </nav>
       {tab === 'home' && <HomeScreen onAdd={handleAdd} data={data} />}
+      {tab === 'explore' && <ExploreScreen data={data} />}
       {tab === 'map' && (
         <div className="Map-wrapper">
           <MapView
@@ -99,6 +127,7 @@ function App() {
           />
         </div>
       )}
+      {tab === 'profile' && <ProfileScreen />}
     </div>
   );
 }

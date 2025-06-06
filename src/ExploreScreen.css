@@ -1,0 +1,31 @@
+.Explore {
+  text-align: center;
+  padding: 1rem;
+}
+
+.CategoryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.CatCard {
+  background: var(--header-bg);
+  border: 1px solid var(--hover-bg);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CatCard .cat-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.CatCard .cat-count {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
