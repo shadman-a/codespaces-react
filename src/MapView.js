@@ -21,6 +21,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [modalIndex, setModalIndex] = useState(null);
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
+  const [showFilters, setShowFilters] = useState(false);
 
   const categoryEmojis = {
     bagel: "🥯",
@@ -123,13 +124,18 @@ function MapView({ data, onUpdate, darkMode = false }) {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button className="filter-btn" aria-label="Filters">
+          <button
+            className="filter-btn"
+            aria-label="Filters"
+            aria-expanded={showFilters}
+            onClick={() => setShowFilters(!showFilters)}
+          >
             <span role="img" aria-label="Filter">
               ⚙️
             </span>
           </button>
         </div>
-        <div className="CategoryRow">
+        <div className={`CategoryRow${showFilters ? '' : ' collapsed'}`}>
           {categories.map((c) => (
             <button
               key={c}
