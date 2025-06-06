@@ -22,6 +22,8 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
+  const [sort, setSort] = useState("default");
+  const [location, setLocation] = useState(null);
 
   const categoryEmojis = {
     bagel: "🥯",
@@ -50,6 +52,18 @@ function MapView({ data, onUpdate, darkMode = false }) {
     return `${emoji} ${cat.charAt(0).toUpperCase() + cat.slice(1)}`;
   };
 
+  const haversine = (lat1, lon1, lat2, lon2) => {
+    const R = 6371; // km
+    const dLat = ((lat2 - lat1) * Math.PI) / 180;
+    const dLon = ((lon2 - lon1) * Math.PI) / 180;
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos((lat1 * Math.PI) / 180) *
+        Math.cos((lat2 * Math.PI) / 180) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  };
+
   const categories = useMemo(() => {
     const cats = new Set();
     for (const item of data) {
@@ -57,6 +71,14 @@ function MapView({ data, onUpdate, darkMode = false }) {
     }
     return Array.from(cats).sort();
   }, [data]);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setLocation({ lat: pos.coords.latitude, lon: pos.coords.longitude });
+      });
+    }
+  }, []);
 
   useEffect(() => {
     async function fillMissing() {
@@ -96,6 +118,34 @@ function MapView({ data, onUpdate, darkMode = false }) {
         (item.address && item.address.toLowerCase().includes(term));
       const matchesCat = !activeCat || item.category === activeCat;
       return matchesTerm && matchesCat;
+    })
+    .map(({ item, idx }) => {
+      let distance = null;
+      if (
+        sort === "distance" &&
+        location &&
+        item.latitude !== null &&
+        item.longitude !== null
+      ) {
+        distance = haversine(
+          location.lat,
+          location.lon,
+          item.latitude,
+          item.longitude,
+        );
+      }
+      return { item, idx, distance };
+    })
+    .sort((a, b) => {
+      if (sort === "alphabetical") {
+        return a.item.name.localeCompare(b.item.name);
+      }
+      if (sort === "distance") {
+        if (a.distance === null) return 1;
+        if (b.distance === null) return -1;
+        return a.distance - b.distance;
+      }
+      return 0;
     });
 
   const center =
@@ -135,18 +185,32 @@ function MapView({ data, onUpdate, darkMode = false }) {
             </span>
           </button>
         </div>
-        <div className={`CategoryRow${showFilters ? '' : ' collapsed'}`}>
-          {categories.map((c) => (
-            <button
-              key={c}
-              className={c === activeCat ? "active" : ""}
-              onClick={() => setActiveCat(c === activeCat ? null : c)}
+        <div className={`Filters${showFilters ? '' : ' collapsed'}`}>
+          <div className="SortRow">
+            <label htmlFor="sort-select">Sort:</label>
+            <select
+              id="sort-select"
+              value={sort}
+              onChange={(e) => setSort(e.target.value)}
             >
-              {catLabel(c)}
-            </button>
-          ))}
+              <option value="default">None</option>
+              <option value="alphabetical">Alphabetical</option>
+              <option value="distance">Distance</option>
+            </select>
+          </div>
+          <div className="CategoryRow">
+            {categories.map((c) => (
+              <button
+                key={c}
+                className={c === activeCat ? "active" : ""}
+                onClick={() => setActiveCat(c === activeCat ? null : c)}
+              >
+                {catLabel(c)}
+              </button>
+            ))}
+          </div>
         </div>
-        {filteredItems.map(({ item, idx }) => (
+        {filteredItems.map(({ item, idx, distance }) => (
           <div
             key={idx}
             className="place-card"
@@ -158,6 +222,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
                 {item.name}
               </div>
               {item.address && <div className="address">{item.address}</div>}
+              {sort === "distance" && distance !== null && (
+                <div className="distance">{distance.toFixed(1)} km</div>
+              )}
             </div>
             <span className="arrow">{"\u27A4"}</span>
           </div>
