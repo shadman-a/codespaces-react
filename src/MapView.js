@@ -24,6 +24,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [activeCat, setActiveCat] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
   const [sort, setSort] = useState("default");
+  const [visitedFilter, setVisitedFilter] = useState("all");
   const [location, setLocation] = useState(null);
 
   const categoryEmojis = {
@@ -118,7 +119,11 @@ function MapView({ data, onUpdate, darkMode = false }) {
         item.name.toLowerCase().includes(term) ||
         (item.address && item.address.toLowerCase().includes(term));
       const matchesCat = !activeCat || item.category === activeCat;
-      return matchesTerm && matchesCat;
+      const matchesVisited =
+        visitedFilter === "all" ||
+        (visitedFilter === "visited" && item.visited) ||
+        (visitedFilter === "unvisited" && !item.visited);
+      return matchesTerm && matchesCat && matchesVisited;
     })
     .map(({ item, idx }) => {
       let distance = null;
@@ -215,6 +220,18 @@ function MapView({ data, onUpdate, darkMode = false }) {
               <option value="default">None</option>
               <option value="alphabetical">Alphabetical</option>
               <option value="distance">Distance</option>
+            </select>
+          </div>
+          <div className="VisitedRow">
+            <label htmlFor="visited-select">Visited:</label>
+            <select
+              id="visited-select"
+              value={visitedFilter}
+              onChange={(e) => setVisitedFilter(e.target.value)}
+            >
+              <option value="all">All</option>
+              <option value="visited">Visited</option>
+              <option value="unvisited">Not Visited</option>
             </select>
           </div>
         </div>
