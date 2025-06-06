@@ -21,6 +21,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [modalIndex, setModalIndex] = useState(null);
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
+  const [showFilters, setShowFilters] = useState(false);
+  const [visitedFilter, setVisitedFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("name");
 
   const categoryEmojis = {
     bagel: "🥯",
@@ -94,7 +97,22 @@ function MapView({ data, onUpdate, darkMode = false }) {
         item.name.toLowerCase().includes(term) ||
         (item.address && item.address.toLowerCase().includes(term));
       const matchesCat = !activeCat || item.category === activeCat;
-      return matchesTerm && matchesCat;
+      const matchesVisited =
+        visitedFilter === "all" ||
+        (visitedFilter === "visited" && item.visited) ||
+        (visitedFilter === "unvisited" && !item.visited);
+      return matchesTerm && matchesCat && matchesVisited;
+    })
+    .sort((a, b) => {
+      if (sortBy === "name") {
+        return a.item.name.localeCompare(b.item.name);
+      }
+      if (sortBy === "rating") {
+        const ra = a.item.rating ?? -Infinity;
+        const rb = b.item.rating ?? -Infinity;
+        return rb - ra;
+      }
+      return 0;
     });
 
   const center =
@@ -123,12 +141,45 @@ function MapView({ data, onUpdate, darkMode = false }) {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button className="filter-btn" aria-label="Filters">
+          <button
+            className="filter-btn"
+            aria-label="Filters"
+            aria-expanded={showFilters}
+            onClick={() => setShowFilters(!showFilters)}
+          >
             <span role="img" aria-label="Filter">
               ⚙️
             </span>
           </button>
         </div>
+        <div className={`FilterPanel${showFilters ? ' show' : ''}`}>
+          <div className="filter-group">
+            <label>
+              Visited
+              <select
+                value={visitedFilter}
+                onChange={(e) => setVisitedFilter(e.target.value)}
+              >
+                <option value="all">All</option>
+                <option value="visited">Visited</option>
+                <option value="unvisited">Unvisited</option>
+              </select>
+            </label>
+          </div>
+          <div className="filter-group">
+            <label>
+              Sort by
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+              >
+                <option value="name">Name</option>
+                <option value="rating">Rating</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
         <div className="CategoryRow">
           {categories.map((c) => (
             <button
