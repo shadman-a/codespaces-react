@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MdHome, MdExplore, MdMap, MdPerson, MdDarkMode, MdLightMode, MdMenu } from 'react-icons/md';
+import { MdHome, MdExplore, MdMap, MdPerson, MdMenu } from 'react-icons/md';
 import './App.css';
 import MapView from './MapView';
 import HomeScreen from './HomeScreen';
@@ -102,12 +102,6 @@ function App() {
             </span>
             <span className="label">Profile</span>
           </button>
-          <button className="toggle" onClick={() => setDarkMode(!darkMode)}>
-            <span className="icon" aria-label="Theme">
-              {darkMode ? <MdLightMode /> : <MdDarkMode />}
-            </span>
-            <span className="label">{darkMode ? "Light" : "Dark"}</span>
-          </button>
         </div>
       </nav>
       {tab === 'home' && <HomeScreen onAdd={handleAdd} data={data} />}
@@ -127,7 +121,9 @@ function App() {
           />
         </div>
       )}
-      {tab === 'profile' && <ProfileScreen />}
+      {tab === 'profile' && (
+        <ProfileScreen darkMode={darkMode} setDarkMode={setDarkMode} />
+      )}
     </div>
   );
 }
