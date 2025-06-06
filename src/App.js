@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react';
-import { MdHome, MdExplore, MdMap, MdPerson, MdMenu } from 'react-icons/md';
+import HomeIcon from '@mui/icons-material/Home';
+import ExploreIcon from '@mui/icons-material/Explore';
+import MapIcon from '@mui/icons-material/Map';
+import PersonIcon from '@mui/icons-material/Person';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import Paper from '@mui/material/Paper';
 import './App.css';
 import MapView from './MapView';
 import HomeScreen from './HomeScreen';
@@ -16,7 +22,6 @@ function App() {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [darkMode, setDarkMode] = useState(prefersDark);
-  const [menuOpen, setMenuOpen] = useState(false);
   const [data, setData] = useState(() => {
     const stored = localStorage.getItem("mapData");
     return stored ? JSON.parse(stored) : mapData;
@@ -45,65 +50,17 @@ function App() {
   return (
     <div className="App">
       {loading && <LoadingScreen />}
-      <nav className="Tabs">
-        <button
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menu"
-        >
-          <MdMenu />
-        </button>
-        <div className={`Menu${menuOpen ? " open" : ""}`}>
-          <button
-            className={tab === "home" ? "active" : ""}
-            onClick={() => {
-              setTab("home");
-              setMenuOpen(false);
-            }}
-          >
-            <span className="icon" aria-label="Home">
-              <MdHome />
-            </span>
-            <span className="label">Home</span>
-          </button>
-          <button
-            className={tab === "explore" ? "active" : ""}
-            onClick={() => {
-              setTab("explore");
-              setMenuOpen(false);
-            }}
-          >
-            <span className="icon" aria-label="Explore">
-              <MdExplore />
-            </span>
-            <span className="label">Explore</span>
-          </button>
-          <button
-            className={tab === "map" ? "active" : ""}
-            onClick={() => {
-              setTab("map");
-              setMenuOpen(false);
-            }}
-          >
-            <span className="icon" aria-label="Map">
-              <MdMap />
-            </span>
-            <span className="label">Map</span>
-          </button>
-          <button
-            className={tab === "profile" ? "active" : ""}
-            onClick={() => {
-              setTab("profile");
-              setMenuOpen(false);
-            }}
-          >
-            <span className="icon" aria-label="Profile">
-              <MdPerson />
-            </span>
-            <span className="label">Profile</span>
-          </button>
-        </div>
-      </nav>
+      <Paper
+        sx={{ position: "fixed", bottom: "var(--bottom-offset)", left: 0, right: 0 }}
+        elevation={3}
+      >
+        <BottomNavigation value={tab} onChange={(e, v) => setTab(v)} showLabels>
+          <BottomNavigationAction label="Home" value="home" icon={<HomeIcon />} />
+          <BottomNavigationAction label="Explore" value="explore" icon={<ExploreIcon />} />
+          <BottomNavigationAction label="Map" value="map" icon={<MapIcon />} />
+          <BottomNavigationAction label="Profile" value="profile" icon={<PersonIcon />} />
+        </BottomNavigation>
+      </Paper>
       {tab === 'home' && <HomeScreen onAdd={handleAdd} data={data} />}
       {tab === 'explore' && <ExploreScreen data={data} />}
       {tab === 'map' && (

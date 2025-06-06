@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup, Circle } from "react-leaflet";
 import { MdFilterList } from "react-icons/md";
+import TextField from "@mui/material/TextField";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import DetailModal from "./DetailModal";
@@ -178,11 +179,15 @@ function MapView({ data, onUpdate, darkMode = false }) {
     <div className="MapWithList">
       <div className="SideList">
         <div className="SearchBar">
-          <input
+          <TextField
+            variant="standard"
             className="search-input"
             placeholder="Search for food…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            InputProps={{ disableUnderline: true }}
+            fullWidth
+            sx={{ flex: 1 }}
           />
           <button
             className="filter-btn"
