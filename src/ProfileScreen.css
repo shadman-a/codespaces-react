@@ -28,3 +28,16 @@
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+.theme-toggle {
+  margin-top: 1rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
