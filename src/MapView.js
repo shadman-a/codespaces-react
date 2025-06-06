@@ -22,6 +22,33 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
 
+  const categoryEmojis = {
+    bagel: "🥯",
+    bakery: "🥐",
+    bar: "🍺",
+    bbq: "🍖",
+    burger: "🍔",
+    cafe: "☕️",
+    chicken: "🍗",
+    deli: "🥪",
+    dessert: "🍰",
+    indian: "🍛",
+    japanese: "🍣",
+    korean: "🥘",
+    mexican: "🌮",
+    noodles: "🍜",
+    other: "🍽️",
+    pizza: "🍕",
+    seafood: "🦞",
+    thai: "🥡",
+    wine: "🍷",
+  };
+
+  const catLabel = (cat) => {
+    const emoji = categoryEmojis[cat] || "🍽️";
+    return `${emoji} ${cat.charAt(0).toUpperCase() + cat.slice(1)}`;
+  };
+
   const categories = useMemo(() => {
     const cats = new Set();
     for (const item of data) {
@@ -109,7 +136,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
               className={c === activeCat ? "active" : ""}
               onClick={() => setActiveCat(c === activeCat ? null : c)}
             >
-              {c.charAt(0).toUpperCase() + c.slice(1)}
+              {catLabel(c)}
             </button>
           ))}
         </div>
