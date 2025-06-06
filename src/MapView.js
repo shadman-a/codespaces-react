@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup, Circle } from "react-leaflet";
+import { MdFilterList } from "react-icons/md";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import DetailModal from "./DetailModal";
@@ -189,10 +190,19 @@ function MapView({ data, onUpdate, darkMode = false }) {
             aria-expanded={showFilters}
             onClick={() => setShowFilters(!showFilters)}
           >
-            <span role="img" aria-label="Filter">
-              ⚙️
-            </span>
+            <MdFilterList size={24} />
           </button>
+        </div>
+        <div className="CategoryRow">
+          {categories.map((c) => (
+            <button
+              key={c}
+              className={c === activeCat ? "active" : ""}
+              onClick={() => setActiveCat(c === activeCat ? null : c)}
+            >
+              {catLabel(c)}
+            </button>
+          ))}
         </div>
         <div className={`Filters${showFilters ? '' : ' collapsed'}`}>
           <div className="SortRow">
@@ -206,17 +216,6 @@ function MapView({ data, onUpdate, darkMode = false }) {
               <option value="alphabetical">Alphabetical</option>
               <option value="distance">Distance</option>
             </select>
-          </div>
-          <div className="CategoryRow">
-            {categories.map((c) => (
-              <button
-                key={c}
-                className={c === activeCat ? "active" : ""}
-                onClick={() => setActiveCat(c === activeCat ? null : c)}
-              >
-                {catLabel(c)}
-              </button>
-            ))}
           </div>
         </div>
         {filteredItems.map(({ item, idx, distance }) => (
