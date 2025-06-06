@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect, useMemo } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Circle } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import DetailModal from "./DetailModal";
@@ -148,8 +148,17 @@ function MapView({ data, onUpdate, darkMode = false }) {
       return 0;
     });
 
-  const center =
-    markers.length > 0 ? [markers[0].latitude, markers[0].longitude] : [0, 0];
+  const center = location
+    ? [location.lat, location.lon]
+    : markers.length > 0
+      ? [markers[0].latitude, markers[0].longitude]
+      : [0, 0];
+
+  useEffect(() => {
+    if (location && mapRef.current) {
+      mapRef.current.flyTo([location.lat, location.lon], 13);
+    }
+  }, [location]);
 
   const handleItemClick = (idx) => {
     const item = data[idx];
@@ -245,6 +254,13 @@ function MapView({ data, onUpdate, darkMode = false }) {
           }
           attribution="&copy; OpenStreetMap contributors"
         />
+        {location && (
+          <Circle
+            center={[location.lat, location.lon]}
+            radius={50}
+            pathOptions={{ color: "blue" }}
+          />
+        )}
         {markers.map((marker) => (
           <Marker
             position={[marker.latitude, marker.longitude]}
