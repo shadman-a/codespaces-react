@@ -13,7 +13,7 @@
   --modal-overlay-bg: rgba(0, 0, 0, 0.5);
   --accent-color: #4f46e5;
   --nav-height: 3rem;
-  --bottom-offset: 1rem;
+  --bottom-offset: 2rem;
 }
 
 [data-theme='dark'] {
