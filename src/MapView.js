@@ -23,7 +23,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
   const [search, setSearch] = useState("");
   const [activeCat, setActiveCat] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
-  const [sort, setSort] = useState("recent");
+  const [sort, setSort] = useState("default");
   const [location, setLocation] = useState(null);
 
   const categoryEmojis = {
@@ -150,8 +150,8 @@ function MapView({ data, onUpdate, darkMode = false }) {
         if (b.distance === null) return -1;
         return a.distance - b.distance;
       }
-      if (sort === "recent") {
-        return b.idx - a.idx;
+      if (sort === "default") {
+        return a.idx - b.idx;
       }
       return 0;
     });
@@ -219,7 +219,7 @@ function MapView({ data, onUpdate, darkMode = false }) {
               value={sort}
               onChange={(e) => setSort(e.target.value)}
             >
-              <option value="recent">Most Recently Added</option>
+              <option value="default">Default Order</option>
               <option value="alphabetical">Alphabetical</option>
               <option value="distance">Distance</option>
               <option value="visited">Visited</option>
