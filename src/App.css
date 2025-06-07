@@ -100,7 +100,7 @@
 }
 
 .Map-wrapper {
-  height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height) - var(--bottom-offset));
   min-height: 350px;
 }
 
@@ -322,7 +322,7 @@
   }
 
   .Map-wrapper {
-    height: calc(100vh - var(--nav-height));
+    height: calc(100vh - var(--nav-height) - var(--bottom-offset));
     min-height: 300px;
   }
 }
