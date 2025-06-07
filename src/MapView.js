@@ -177,8 +177,6 @@ function MapView({ data, onUpdate, darkMode = false }) {
         ref.openPopup();
       }
     }
-    // Open the detail modal just like clicking on the marker
-    setModalIndex(idx);
   };
 
   return (
@@ -243,7 +241,16 @@ function MapView({ data, onUpdate, darkMode = false }) {
                 <div className="distance">{distance.toFixed(1)} km</div>
               )}
             </div>
-            <span className="arrow">{"\u27A4"}</span>
+            <button
+              className="arrow-btn"
+              aria-label="Edit"
+              onClick={(e) => {
+                e.stopPropagation();
+                setModalIndex(idx);
+              }}
+            >
+              <span className="arrow">{"\u27A4"}</span>
+            </button>
           </div>
         ))}
       </div>
