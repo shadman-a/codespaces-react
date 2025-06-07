@@ -237,6 +237,9 @@ function MapView({ data, onUpdate, darkMode = false }) {
                 {item.name}
               </div>
               {item.address && <div className="address">{item.address}</div>}
+              {item.visited && item.rating != null && (
+                <div className="rating">{item.rating}/5</div>
+              )}
               {sort === "distance" && distance !== null && (
                 <div className="distance">{distance.toFixed(1)} km</div>
               )}

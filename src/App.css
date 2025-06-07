@@ -277,6 +277,11 @@
   opacity: 0.8;
 }
 
+.card-info .rating {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
 .card-info .distance {
   font-size: 0.8rem;
   opacity: 0.8;
