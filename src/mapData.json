@@ -1816,7 +1816,7 @@
     "longitude": -73.9836622,
     "notes": "Chicken schnitzel salad",
     "visited": true,
-    "rating": null,
+    "rating": 4,
     "category": "cafe"
   },
   {
@@ -1866,7 +1866,7 @@
     "longitude": -73.9437083,
     "notes": "Chicago hot dog",
     "visited": true,
-    "rating": null,
+    "rating": 5,
     "category": "other"
   },
   {
