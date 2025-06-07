@@ -17,19 +17,16 @@ function App() {
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [darkMode, setDarkMode] = useState(prefersDark);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [data, setData] = useState(() => {
-    const stored = localStorage.getItem("mapData");
-    return stored ? JSON.parse(stored) : mapData;
-  });
+  // Data is no longer persisted to localStorage. It simply
+  // initializes from the bundled mapData.json file.
+  const [data, setData] = useState(mapData);
 
   useEffect(() => {
     const id = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(id);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("mapData", JSON.stringify(data));
-  }, [data]);
+
 
   useEffect(() => {
     document.body.dataset.theme = darkMode ? "dark" : "light";
