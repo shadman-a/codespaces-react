@@ -5,9 +5,17 @@ function DetailModal({ item, onClose, onSave }) {
   const [name, setName] = useState(item.name);
   const [address, setAddress] = useState(item.address || '');
   const [visited, setVisited] = useState(item.visited || false);
+  const [rating, setRating] = useState(item.rating || '');
+  const [notes, setNotes] = useState(item.notes || '');
 
   const handleSave = () => {
-    onSave({ name, address, visited });
+    onSave({
+      name,
+      address,
+      visited,
+      rating: rating === '' ? null : Math.min(5, Math.max(1, Number(rating))),
+      notes,
+    });
   };
 
   return (
@@ -29,6 +37,23 @@ function DetailModal({ item, onClose, onSave }) {
             onChange={(e) => setVisited(e.target.checked)}
           />
           Visited
+        </label>
+        <label>
+          Rating (1-5)
+          <input
+            type="number"
+            min="1"
+            max="5"
+            value={rating}
+            onChange={(e) => setRating(e.target.value)}
+          />
+        </label>
+        <label>
+          Notes
+          <textarea
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+          ></textarea>
         </label>
         <div className="actions">
           <button onClick={handleSave}>Save</button>

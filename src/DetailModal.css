@@ -35,6 +35,16 @@
   border-radius: 0.25rem;
 }
 
+.Modal input[type='number'],
+.Modal textarea {
+  width: 100%;
+  margin-top: 0.25rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--hover-bg);
+  border-radius: 0.25rem;
+}
+
 .Modal .actions {
   margin-top: 1rem;
   text-align: right;
